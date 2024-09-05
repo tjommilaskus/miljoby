@@ -1,11 +1,42 @@
 body {
   background-color: black;
 }
-h1 {
-  color: white;
-  text-align: center;
+
+section {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
 }
-.forsidebilde {
+
+img {
+  height: auto;
   width: 100%;
-  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+.bildeskrift1 {
+  color: rgb(93, 172, 36);
+  font-size: 128px;
+  text-align: center;
+  margin-top: -540px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-family: "nunito", sans-serif;
+}
+.bildeskrift2 {
+  color: rgb(93, 172, 36);
+  font-size: 96px;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-family: "nunito", sans-serif;
+}
+.overskrift {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  text-align: center;
+  margin-top: 220px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-family: "nunito", sans-serif;
 }
