@@ -1,0 +1,11 @@
+body {
+  background-color: black;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+.forsidebilde {
+  width: 100%;
+  height: 80%;
+}
