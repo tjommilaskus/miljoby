@@ -4,10 +4,14 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: rgb(254, 246, 246);
-  }
+    position: fixed;  /* Make the navbar fixed */
+    top: 0;           /* Stay at the top of the page */
+    width: 100%;      /* Full width */
+    z-index: 1000;    /* Ensure the navbar is on top of other content */
+}
   
   li {
-    float: left;
+    float: right;
   }
   
   li a {
