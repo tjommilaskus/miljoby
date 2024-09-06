@@ -6,9 +6,24 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
     <link rel="icon" href="favicon.png" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/forside.css" />
+    
+      <script>
+    window.onload = function() {
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+        });
+    };
+  </script>
+    
   </head>
   <body>
+    
+    
+    <div id="navbar"></div>
+
     <section>
       <img
         src="bilder/framside.webp"
@@ -21,5 +36,7 @@
     <div>
       <h1 class="overskrift">Velkommen til HVLtopia</h1>
     </div>
+
+    
   </body>
 </html>

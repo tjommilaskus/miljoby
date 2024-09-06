@@ -15,7 +15,7 @@ img {
   justify-content: center;
 }
 .bildeskrift1 {
-  color: rgb(93, 172, 36);
+  color: rgb(241, 244, 238);
   font-size: 128px;
   text-align: center;
   margin-top: -540px;
@@ -24,7 +24,7 @@ img {
   font-family: "nunito", sans-serif;
 }
 .bildeskrift2 {
-  color: rgb(93, 172, 36);
+  color: rgb(222, 227, 218);
   font-size: 96px;
   text-align: center;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
