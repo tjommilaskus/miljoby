@@ -1,21 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <title>HVLtopia</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="HVLtopia website" />
     <link rel="icon" href="favicon.png" />
-   
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/aboutUs.css">
     
-      <script>
-    window.onload = function() {
-      fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar').innerHTML = data;
-        });
-    };
-  </script>
+    <script>
+      window.onload = function() {
+        fetch('navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+          })
+          .catch(error => console.error('Error loading navbar:', error));
+      };
+    </script>
 </head>
 <body>
-      <div id="navbar"></div>
+  <div id="navbar"></div>
+
+<!-- Team Section -->
+<section id="team">
+    <h2>Meet the Team</h2>
+    <div class="team-container">
+        <div class="team-member">
+            <img src="bilder/headshot.png" alt="Team Member 1" class="team-photo" />
+            <h3>John Doe</h3>
+            <p>Lead Developer</p>
+            <p>John is a seasoned software engineer with 10 years of experience in full-stack development.</p>
+        </div>
+        <div class="team-member">
+            <img src="bilder/headshot.png" alt="Team Member 2" class="team-photo" />
+            <h3>Jane Smith</h3>
+            <p>Project Manager</p>
+            <p>Jane has a background in project management and excels in coordinating large projects.</p>
+        </div>
+        <div class="team-member">
+            <img src="bilder/headshot.png" alt="Team Member 3" class="team-photo" />
+            <h3>Mike Johnson</h3>
+            <p>UI/UX Designer</p>
+            <p>Mike is a creative designer who focuses on delivering user-friendly interfaces and experiences.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: info@teamwebsite.com</p>
+    <p>Phone: +1-234-567-890</p>
+    <p>Address: 123 Team St., Tech City, USA</p>
+</footer>
+
 </body>
+</html>
+
