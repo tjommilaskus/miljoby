@@ -1,43 +1,235 @@
 <!DOCTYPE html>
-<html lang="nb_no">
+<html lang="no">
   <head>
     <meta charset="UTF-8" />
-    <title>HVLtopia</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="" />
-    <link rel="icon" href="favicon.png" />
-    <link rel="stylesheet" href="css/forside.css" />
-    <link rel="stylesheet" href="css/public.css" />
-    
-      <script>
-    window.onload = function() {
-      fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar').innerHTML = data;
-        });
-    };
-  </script>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HVLTopia - Fremtidens Miljøby</title>
+    <style>
+      :root {
+        --primary-color: #4caf50;
+        --secondary-color: #e8f5e9;
+        --text-color: #333;
+        --accent-color: #1b5e20;
+      }
+      body,
+      html {
+        font-family: "Roboto", Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        scroll-behavior: smooth;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      header {
+        background-color: rgba(255, 255, 255, 0.95);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+      }
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--primary-color);
+      }
+      nav ul {
+        list-style-type: none;
+        display: flex;
+      }
+      nav ul li {
+        margin-left: 2rem;
+      }
+      nav ul li a {
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+      nav ul li a:hover {
+        color: var(--primary-color);
+      }
+      .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("./bilder/framside.webp") no-repeat center center/cover;
+        color: #ffffff;
+        text-align: center;
+      }
+      .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+      .btn {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: #ffffff;
+        padding: 0.8rem 2rem;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .btn:hover {
+        background-color: var(--accent-color);
+        transform: translateY(-3px);
+      }
+      section {
+        padding: 5rem 0;
+      }
+      h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        color: var(--primary-color);
+      }
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+      .feature {
+        background-color: var(--secondary-color);
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .feature:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      .feature h3 {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+      }
+      .cta {
+        background-color: var(--primary-color);
+        color: #ffffff;
+        text-align: center;
+        padding: 5rem 0;
+      }
+      .cta h2 {
+        color: #ffffff;
+      }
+      footer {
+        background-color: var(--text-color);
+        color: #ffffff;
+        text-align: center;
+        padding: 2rem 0;
+      }
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+        nav ul {
+          display: none;
+        }
+      }
+    </style>
   </head>
   <body>
-    
-    
-    <div id="navbar"></div>
+    <header>
+      <nav class="container">
+        <div class="logo">HVLTopia</div>
+        <ul>
+          <li><a href="#om">Om Oss</a></li>
+          <li><a href="#funksjoner">Funksjoner</a></li>
+          <li><a href="#delta">Delta</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <section>
-      <img
-        src="bilder/framside.webp"
-        alt="HVLtopia logo"
-        class="forsidebilde"
-      />
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Velkommen til HVLTopia</h1>
+        <p>
+          En banebrytende miljøby som setter standarden for bærekraftig byliv i
+          Norge
+        </p>
+        <a href="#delta" class="btn">Utforsk Fremtiden</a>
+      </div>
     </section>
-    <h1 class="bildeskrift1">HVL topia</h1>
-    <h2 class="bildeskrift2">Vår fremtid, i dag</h2>
-    <div>
-      <h1 class="overskrift">Velkommen til HVLtopia</h1>
-    </div>
 
-    
+    <section id="om" class="container">
+      <h2>Om HVLTopia</h2>
+      <p>
+        HVLTopia er et levende laboratorium for bærekraftige løsninger, der
+        innovasjon møter natur. Vårt mål er å skape et harmonisk samfunn der
+        mennesker og miljø trives side om side. Med fokus på grønn teknologi,
+        smart byplanlegging og fellesskapsverdier, bygger vi en by som er rustet
+        for fremtidens utfordringer.
+      </p>
+    </section>
+
+    <section id="funksjoner" class="container">
+      <h2>Våre Løsninger</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Grønn Energi</h3>
+          <p>
+            100% fornybar energi fra sol, vind og vannkraft. Smarte
+            energiløsninger i alle bygninger.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Smart Transport</h3>
+          <p>
+            Effektive kollektivløsninger, sykkelveinett og autonome elektriske
+            kjøretøy.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Urbant Landbruk</h3>
+          <p>
+            Lokalprodusert mat i takhager, vertikale gårder og fellesområder.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Sirkulær Økonomi</h3>
+          <p>Avanserte gjenvinningssystemer og delingsøkonomi-initiativer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="delta" class="cta">
+      <div class="container">
+        <h2>Bli med på reisen mot en grønnere fremtid!</h2>
+        <p>
+          HVLTopia er mer enn bare en by - det er en bevegelse. Vi inviterer deg
+          til å være en del av denne spennende utviklingen.
+        </p>
+        <a href="#kontakt" class="btn">Delta i HVLTopia</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 HVLTopia. Alle rettigheter reservert.</p>
+      </div>
+    </footer>
   </body>
 </html>

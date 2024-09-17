@@ -1,36 +1,75 @@
+/* navBar.css */
+
+:root {
+  --primary-color: #4caf50;
+  --secondary-color: #2196f3;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --accent-color: #ffc107;
+  --navbar-bg: rgba(18, 18, 18, 0.8);
+  --navbar-text: #ffffff;
+  --navbar-hover: rgba(255, 255, 255, 0.1);
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #f4f4f4;
+  font-family: "Nunito", Arial, sans-serif;
+  padding-top: 54px; /* Add padding to account for fixed navbar */
+}
+
+nav {
+  background-color: var(--navbar-bg);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: rgb(254, 246, 246);
-  position: fixed; /* Make the navbar fixed */
-  top: 0; /* Stay at the top of the page */
-  width: 100%; /* Full width */
-  z-index: 1000; /* Ensure the navbar is on top of other content */
+  display: flex;
+  justify-content: flex-end;
 }
 
 li {
-  float: right;
+  margin: 0;
 }
 
 li a {
   display: block;
-  color: rgb(0, 0, 0);
+  color: var(--navbar-text);
   text-align: center;
-  padding: 14px 16px;
+  padding: 1rem 1.5rem;
   text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: rgb(248, 236, 236);
+  background-color: var(--navbar-hover);
+  color: var(--accent-color);
+}
+
+/* Style for the active page */
+li a.active {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+  ul {
+    flex-direction: column;
+  }
+
+  li {
+    text-align: center;
+  }
+
+  li a {
+    padding: 0.8rem 1rem;
+  }
 }
