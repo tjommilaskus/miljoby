@@ -5,20 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HVLTopia - Fremtidens Miljøby</title>
     <link rel="stylesheet" href="/css/forside.css" />
+    <script>
+      window.onload = function () {
+        fetch("navBar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar").innerHTML = data;
+          });
+      };
+    </script>
   </head>
   <body>
-    <header>
-      <nav class="container">
-        <div class="logo">HVLTopia</div>
-        <ul>
-          <li><a href="#om">Om Oss</a></li>
-          <li><a href="#funksjoner">Funksjoner</a></li>
-          <li><a href="#delta">Delta</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
-        </ul>
-      </nav>
-    </header>
-
     <section class="hero">
       <div class="hero-content">
         <h1>Velkommen til HVLTopia</h1>
