@@ -8,17 +8,7 @@
     <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="css/navBar.css">
     <link rel="stylesheet" href="css/aboutUs.css">
-    
-    <script>
-      window.onload = function() {
-        fetch('navbar.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('navbar').innerHTML = data;
-          })
-          .catch(error => console.error('Error loading navbar:', error));
-      };
-    </script>
+    <link rel="stylesheet" href="script/script.js">
 </head>
 <body>
   <div id="navbar"></div>
