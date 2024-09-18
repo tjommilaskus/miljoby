@@ -8,20 +8,10 @@
     <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="css/navBar.css">
     <link rel="stylesheet" href="css/aboutUs.css">
-    
-    <script>
-      window.onload = function() {
-        fetch('navbar.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('navbar').innerHTML = data;
-          })
-          .catch(error => console.error('Error loading navbar:', error));
-      };
-    </script>
+    <script src="script/script.js"></script>
 </head>
 <body>
-  <div id="navbar"></div>
+  <div id="navBar"></div>
 
 <!-- Team Section -->
 <section id="team">
@@ -47,13 +37,11 @@
         </div>
     </div>
 </section>
-
-<!-- Footer Section -->
 <footer id="contact">
-    <h3>Contact Us</h3>
-    <p>Email: info@teamwebsite.com</p>
-    <p>Phone: +1-234-567-890</p>
-    <p>Address: 123 Team St., Tech City, USA</p>
+    <h3><strong>Kontakt oss</strong></h3>
+    <p>Email: HVLTopia@HVLTopia.com</p>
+    <p>Telefon: +47 94825842 </p>
+    <p>Address: Norweagian Western Union Of Applied Science, B117, Bergen</p>
 </footer>
 
 </body>

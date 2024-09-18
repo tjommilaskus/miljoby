@@ -19,47 +19,13 @@ html {
   margin: 0 auto;
   padding: 0 20px;
 }
-header {
-  background-color: rgba(255, 255, 255, 0.95);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-}
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--primary-color);
-}
-nav ul {
-  list-style-type: none;
-  display: flex;
-}
-nav ul li {
-  margin-left: 2rem;
-}
-nav ul li a {
-  color: var(--text-color);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-nav ul li a:hover {
-  color: var(--primary-color);
-}
+
 .hero {
   height: 100vh;
   display: flex;
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./bilder/framside.webp") no-repeat center center/cover;
+    url("../bilder/framside.webp") no-repeat center center/cover;
   color: #ffffff;
   text-align: center;
 }
@@ -104,7 +70,8 @@ h2 {
   gap: 2rem;
 }
 .feature {
-  background-color: var(--secondary-color);
+  background-color: #e8f5e9;
+  color: #333;
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
@@ -140,4 +107,9 @@ footer {
   nav ul {
     display: none;
   }
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: none;
 }
