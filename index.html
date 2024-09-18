@@ -4,18 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HVLTopia - Fremtidens Miljøby</title>
-    <link rel="stylesheet" href="/css/forside.css" />
-    <script>
-      window.onload = function () {
-        fetch("navBar.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("navbar").innerHTML = data;
-          });
-      };
-    </script>
+    <link rel="stylesheet" href="css/forside.css" />
+    <link rel="stylesheet" href="css/navBar.css">
+    <script src="script/script.js"></script>
+    
   </head>
   <body>
+    <div id="navBar"></div>
     <section class="hero">
       <div class="hero-content">
         <h1>Velkommen til HVLTopia</h1>
