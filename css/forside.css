@@ -70,7 +70,8 @@ h2 {
   gap: 2rem;
 }
 .feature {
-  background-color: var(--secondary-color);
+  background-color: #e8f5e9;
+  color: #333;
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
