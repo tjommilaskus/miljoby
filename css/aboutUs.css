@@ -55,9 +55,11 @@ header h1 {
 }
 
 .gruppe-member {
+    display: grid;
+    place-items: center;
     background-color: #fff;
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 80px 20px;
     margin: 10px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -80,5 +82,3 @@ header h1 {
 .gruppe-medlemer p {
     color: #555;
 }
-
-
