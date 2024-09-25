@@ -28,6 +28,7 @@ html {
     url("../bilder/framside.webp") no-repeat center center/cover;
   color: #ffffff;
   text-align: center;
+  margin-top: -10vh;
 }
 .hero-content {
   max-width: 800px;
