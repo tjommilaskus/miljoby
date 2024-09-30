@@ -4,22 +4,9 @@
   --background-color: #121212;
   --text-color: #ffffff;
   --accent-color: #ffffff;
-  --navbar-bg:  rgba(255, 255, 255, 0.8);
+  --navbar-bg: rgba(255, 255, 255, 0.8);
   --navbar-text: #4caf50;
   --navbar-hover: #4caf50;
-}
-
-nav ul .logo-item {
-  margin-right: auto; /* This pushes the rest of the items to the right */
-}
-
-.logo {
-  height: 5vh; /* Adjust the logo size as needed */
-}
-
-nav ul .link-item{
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 body {
@@ -27,29 +14,36 @@ body {
   font-family: "Nunito", Arial, sans-serif;
   padding-top: 54px;
 }
+
 nav {
   background-color: var(--navbar-bg);
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   z-index: 1000;
   backdrop-filter: blur(10px);
   transition: background-color 0.3s ease;
 }
 
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
-li {
+nav ul .logo-item {
+  margin-right: auto;
+}
+
+nav ul .link-item {
   margin: 0;
 }
 
-li a {
+nav ul li a {
   display: block;
   color: var(--navbar-text);
   text-align: center;
@@ -58,26 +52,30 @@ li a {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-li a:hover {
+nav ul li a:hover {
   background-color: var(--navbar-hover);
   color: var(--accent-color);
 }
 
-li a.active {
+nav ul li a.active {
   background-color: var(--primary-color);
   color: var(--text-color);
 }
 
+.logo {
+  height: 5vh;
+}
+
 @media screen and (max-width: 600px) {
-  ul {
+  nav ul {
     flex-direction: column;
   }
 
-  li {
+  nav ul li {
     text-align: center;
   }
 
-  li a {
+  nav ul li a {
     padding: 0.8rem 1rem;
   }
 }
