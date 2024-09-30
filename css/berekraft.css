@@ -21,11 +21,12 @@ body {
 }
 
 .overskrift {
-  position: fixed;
+  position: relative;
   background-color: #e8f5e9;
-  height: 115px;
-  top: 55px;
+  height: 120px;
+  top: 0px;
   width: 100%;
+  padding: 10px 0;
 }
 
 /* Overskrifter */
