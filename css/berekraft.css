@@ -19,14 +19,24 @@ body {
   overflow: hidden;
   padding: 20px;
 }
+.overskriftOgBilde {
+position: relative;
+text-align: center;
+}
+
+img {
+  max-width: 100%; 
+  height: auto;  
+}
 
 .overskrift {
-  position: relative;
-  background-color: #e8f5e9;
-  height: 120px;
-  top: 0px;
-  width: 100%;
-  padding: 10px 0;
+  position: absolute; 
+  top: 30%; 
+  left: 50%;
+  transform: translateX(-50%); 
+  color: white; 
+  background-color:  #1b5e20; 
+  padding: 50px; 
 }
 
 /* Overskrifter */
@@ -44,6 +54,7 @@ h1 {
   margin-top: 50px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: #1b5e20; 
 }
 
 h2 {
