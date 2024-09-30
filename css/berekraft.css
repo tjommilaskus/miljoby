@@ -20,6 +20,14 @@ body {
   padding: 20px;
 }
 
+.overskrift {
+  position: fixed;
+  background-color: #e8f5e9;
+  height: 115px;
+  top: 55px;
+  width: 100%;
+}
+
 /* Overskrifter */
 h1,
 h2,
