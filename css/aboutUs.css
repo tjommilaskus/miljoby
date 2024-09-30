@@ -54,16 +54,16 @@ header h1 {
 }
 
 .gruppe-member {
-  display: grid;
-  place-items: center;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 80px 20px;
-  margin: 10px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  border-radius: 8px;
+    display: grid;
+    place-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 80px 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border-radius: 8px;
 }
 
 .gruppe-bilde {
@@ -80,4 +80,9 @@ header h1 {
 
 .gruppe-medlemer p {
   color: #555;
+}
+
+.gruppe-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
