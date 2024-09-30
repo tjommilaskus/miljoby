@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100">
+  <g transform="translate(10,10)">
+    <!-- H -->
+    <rect x="0" y="0" width="20" height="80" fill="#2E7D32"/>
+    <rect x="0" y="30" width="40" height="20" fill="#4CAF50"/>
+    
+    <!-- V -->
+    <path d="M45 0 L65 80 L85 0" fill="#2E7D32"/>
+    
+    <!-- L -->
+    <rect x="80" y="0" width="20" height="80" fill="#2E7D32"/>
+    <rect x="80" y="60" width="40" height="20" fill="#4CAF50"/>
+    
+    <!-- Circular element representing sustainability -->
+    <circle cx="50" cy="40" r="15" fill="#81C784"/>
+    
+    <!-- Leaf shape inside circle -->
+    <path d="M43 40 Q50 30, 57 40 T64 40" fill="none" stroke="#1B5E20" stroke-width="2"/>
+    
+    <!-- Tree-like elements at bottom -->
+    <path d="M5 80 L15 65 L25 80" fill="#81C784"/>
+    <path d="M95 80 L105 65 L115 80" fill="#81C784"/>
+  </g>
+</svg>

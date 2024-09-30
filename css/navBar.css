@@ -9,6 +9,19 @@
   --navbar-hover: #4caf50;
 }
 
+nav ul .logo-item {
+  margin-right: auto; /* This pushes the rest of the items to the right */
+}
+
+.logo {
+  height: 5vh; /* Adjust the logo size as needed */
+}
+
+nav ul .link-item{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 body {
   margin: 0;
   font-family: "Nunito", Arial, sans-serif;
