@@ -126,12 +126,17 @@ input[type="email"] {
 button {
   width: 8%;
   padding: 10px;
-  background-color: #28a745;
+  background-color: #1b5e20;
   border: none;
-  color: white;
+  color: #e8f5e9;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+}
+
+button:hover{
+  background-color:#e8f5e9; 
+  color: #1b5e20;
 }
 
 #om{
