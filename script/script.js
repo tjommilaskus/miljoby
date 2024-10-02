@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <li class="link-item"><a href="lesMer.html">Les Mer</a></li>
           <li class="link-item"><a href="berekraft.html">Bærekraft</a></li>
           <li class="link-item"><a href="omOss.html">Om Oss</a></li>
-          <li class="link-item"><a href="kontaktOss.html">Kontakt oss</a></li>
+          <li class="link-item"><a href="omProsjektet.html">Om Prosjektet</a></li>
           
         </ul>
       </nav>

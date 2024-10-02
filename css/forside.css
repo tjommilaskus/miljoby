@@ -26,7 +26,7 @@ html {
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../bilder/framside.webp") no-repeat center center/cover;
-  color: #ffffff;
+  color: var(--text-color);
   text-align: center;
   margin-top: -10vh;
 }
@@ -45,7 +45,7 @@ html {
 .btn {
   display: inline-block;
   background-color: var(--primary-color);
-  color: #ffffff;
+  color: var(--text-color);
   padding: 0.8rem 2rem;
   text-decoration: none;
   border-radius: 50px;
@@ -89,12 +89,12 @@ h2 {
 }
 .cta {
   background-color: var(--primary-color);
-  color: #ffffff;
+  color: var(--text-color);
   text-align: center;
   padding: 5rem 0;
 }
 .cta h2 {
-  color: #ffffff;
+  color: var(--text-color);
 }
 footer {
   background-color: #2c3e50;
@@ -120,16 +120,26 @@ input[type="email"] {
   width: 10%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #ccc;
+  border: 1px solid var(--text-color);
   border-radius: 4px;
 }
 button {
   width: 8%;
   padding: 10px;
-  background-color: #28a745;
+  background-color: #1b5e20;
   border: none;
-  color: white;
+  color: #e8f5e9;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+}
+
+button:hover{
+  background-color:#e8f5e9; 
+  color: #1b5e20;
+}
+
+#om{
+  color: #333!important;
+  z-index: 10;
 }
