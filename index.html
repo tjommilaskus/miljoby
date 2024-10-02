@@ -71,9 +71,13 @@
           <p>
             HVLTopia er mer enn bare en by -
             <strong>det er en bevegelse.</strong> Vi inviterer deg til å være en
-            del av denne spennende utviklingen.
+            del av denne spennende utviklingen. 
           </p>
-          <a href="lesMer.html" class="btn">Delta i HVLTopia</a>
+          <form action="/submit-email" method="POST">
+            <label for="email">Bli med i vårt nyhets brev:</label>
+            <input type="email" id="email" name="email" placeholder="Din E-mail" required>
+            <button type="submit">Sign Up</button>
+        </form>
         </div>
       </section>
     </main>
