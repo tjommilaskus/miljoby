@@ -108,15 +108,28 @@ a:active {
   text-decoration: none;
 }
 #medlem {
-  padding: 50px 0;
   background-color:#fff;
   padding: 50px 0; 
   float: top;
 }
 .textVenstre {
-  position: relative;
-  left: 30px;
+  position:sticky;
+  padding-left: 3vw;
 }
-.bildePosisjon {
+.bildeMedRamme {
+  position: relative;
   float: right;
+  border: 1vw solid; color: #4caf50;
+  top:50px;
+  padding: auto;
+  width:300px;
+  height:200x;
+  right:100px;
+
+}
+.storText {
+  font-size: 30px;
+}
+.sentrertText{
+text-align: center;
 }
