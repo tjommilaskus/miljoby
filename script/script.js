@@ -5,10 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
       <nav>
         <ul>
           <li class="logo-item"><a href="index.html"><img src="bilder/hvl-topia-logo.svg" alt="HVLTopia Logo" class="logo"></a></li>
-          <li class="link-item"><a href="lesMer.html">Les Mer</a></li>
-          <li class="link-item"><a href="berekraft.html">Bærekraft</a></li>
-          <li class="link-item"><a href="omOss.html">Om Oss</a></li>
           <li class="link-item"><a href="omProsjektet.html">Om Prosjektet</a></li>
+          <li class="link-item"><a href="berekraft.html">Bærekraft</a></li>
+          <li class="link-item"><a href="lesMer.html">Les Mer</a></li>
+          <li class="link-item"><a href="omOss.html">Om Oss</a></li>
+          
           
         </ul>
       </nav>
