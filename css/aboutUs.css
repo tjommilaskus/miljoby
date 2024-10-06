@@ -110,6 +110,7 @@ a:active {
 #medlem {
   background-color:#fff;
   padding: 50px 0; 
+  text-align: center;
   
 }
 .textVenstre {
@@ -122,23 +123,37 @@ a:active {
 .sentrertText{
 text-align: center;
 }
-.bilde {
-  float: right;
-  position: sticky;
-  padding-right: 4vw;
-  width: 20vw;
-  height: 26vw;
-  padding-top:4vw ;
-}
-.bildeContainer {
-  display: flex; 
-  float: right;
+/*.bildeContainer {
+
+  position: absolute;             
+  top: 50%;                    
+  left: 50%;                     
+  transform: translate(-50%, -50%);
   object-fit: cover; 
   width: 300px; 
   height: 400px; 
   border: 1px solid #ccc; 
   border-radius: 10px; 
   overflow: hidden; 
-  position: relative;
-  transform:translate(-8vw,10vw);
+}
+  */
+  .wrapper {
+    display: flex;   
+    justify-content: center;               /* Use grid layout */
+    align-items: center;            /* Center items both horizontally and vertically */
+    height: 100vh;                  /* Full height of the viewport */
+}
+
+.bildeContainer {
+    width: 300px;                   /* Set width of the container */
+    height: 400px;                  /* Set height of the container */
+    border: 1px solid #ccc;         
+    border-radius: 10px;            
+    overflow: hidden;   
+    position: relative;            
+}
+.bilde {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
