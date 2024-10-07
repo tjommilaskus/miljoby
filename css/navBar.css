@@ -12,10 +12,10 @@
 body {
   margin: 0;
   font-family: "Nunito", Arial, sans-serif;
-  padding-top: 54px; /* Space for fixed navbar */
+  padding-top: 54px; 
 }
 
-/* Navbar styles for full screen */
+
 nav {
   background-color: var(--navbar-bg);
   position: fixed;
@@ -31,13 +31,13 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Display flex for full screen */
+  display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
 nav ul .logo-item {
-  margin-right: auto; /* Push logo to the left */
+  margin-right: auto;
 }
 
 nav ul .link-item {
@@ -64,50 +64,50 @@ nav ul li a.active {
 }
 
 .logo {
-  height: 5vh; /* Adjust logo height */
+  height: 5vh; 
 }
 
-/* Media Queries for Responsive Design */
+
 @media screen and (max-width: 600px) {
   nav ul {
-    flex-direction: column; /* Stack items vertically on small screens */
-    display: none; /* Initially hide menu */
+    flex-direction: column; 
+    display: none; 
   }
 
   nav ul.show {
-    display: flex; /* Show menu when hamburger is clicked */
+    display: flex; 
   }
 
   nav ul li {
-    text-align: center; /* Center align items */
-    width: 100%; /* Full width for each item */
+    text-align: center; 
+    width: 100%; 
   }
 
   nav ul li a {
-    padding: 1rem; /* Padding for links */
+    padding: 1rem; 
   }
 
   .hamburger {
-    display: flex; /* Show hamburger icon */
-    flex-direction: column; /* Stack lines vertically */
+    display: flex; 
+    flex-direction: column; 
     cursor: pointer;
     padding: 1rem;
   }
 
   .hamburger span {
     background-color: var(--navbar-text);
-    height: 3px; /* Height of the hamburger lines */
-    width: 25px; /* Width of the hamburger lines */
-    margin: 4px 0; /* Space between lines */
+    height: 3px; 
+    width: 25px; 
+    margin: 4px 0; 
     transition: 0.3s;
   }
 
   nav ul .logo-item {
-    order: -1; /* Move logo to the top */
-    margin-bottom: 1rem; /* Add space below logo */
+    order: -1; 
+    margin-bottom: 1rem; 
   }
 
   .logo {
-    margin-left: 1rem; /* Adjust logo position on small screens */
+    margin-left: 1rem; 
   }
 }
