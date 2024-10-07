@@ -12,9 +12,10 @@
 body {
   margin: 0;
   font-family: "Nunito", Arial, sans-serif;
-  padding-top: 54px;
+  padding-top: 54px; /* Space for fixed navbar */
 }
 
+/* Navbar styles for full screen */
 nav {
   background-color: var(--navbar-bg);
   position: fixed;
@@ -30,13 +31,13 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: flex; /* Display flex for full screen */
   justify-content: flex-end;
   align-items: center;
 }
 
 nav ul .logo-item {
-  margin-right: auto;
+  margin-right: auto; /* Push logo to the left */
 }
 
 nav ul .link-item {
@@ -63,19 +64,50 @@ nav ul li a.active {
 }
 
 .logo {
-  height: 5vh;
+  height: 5vh; /* Adjust logo height */
 }
 
+/* Media Queries for Responsive Design */
 @media screen and (max-width: 600px) {
   nav ul {
-    flex-direction: column;
+    flex-direction: column; /* Stack items vertically on small screens */
+    display: none; /* Initially hide menu */
+  }
+
+  nav ul.show {
+    display: flex; /* Show menu when hamburger is clicked */
   }
 
   nav ul li {
-    text-align: center;
+    text-align: center; /* Center align items */
+    width: 100%; /* Full width for each item */
   }
 
   nav ul li a {
-    padding: 0.8rem 1rem;
+    padding: 1rem; /* Padding for links */
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger icon */
+    flex-direction: column; /* Stack lines vertically */
+    cursor: pointer;
+    padding: 1rem;
+  }
+
+  .hamburger span {
+    background-color: var(--navbar-text);
+    height: 3px; /* Height of the hamburger lines */
+    width: 25px; /* Width of the hamburger lines */
+    margin: 4px 0; /* Space between lines */
+    transition: 0.3s;
+  }
+
+  nav ul .logo-item {
+    order: -1; /* Move logo to the top */
+    margin-bottom: 1rem; /* Add space below logo */
+  }
+
+  .logo {
+    margin-left: 1rem; /* Adjust logo position on small screens */
   }
 }
