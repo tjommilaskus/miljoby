@@ -49,6 +49,10 @@ h2{
   font-size: 2em;
 }
 
+#om{
+ font-size: large;
+}
+
 h1 {
   font-size: 2.8em;
   margin-top: 50px;
@@ -66,18 +70,19 @@ h2 {
 
 .inhold1{
   margin-bottom: 30px;
-  padding: 20px;
+  padding: 10px;
   text-align: left;
   margin-left:3vw;
+  font-size: large;
   
 
 }
 
 .inhold2{
   margin-bottom: 30px;
-  padding: 20px;
+  padding: 10px;
   text-align: left;
- 
+  font-size: large;
   list-style-type: none;
  
 
