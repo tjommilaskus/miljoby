@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #4caf50;
+  --secondary-color: #e8f5e9;
+  --text-color: #333;
+  --accent-color: #1b5e20;
+}
+
 /*Genereltr*/
 body {
   font-family: Arial, sans-serif;
@@ -54,17 +61,19 @@ header h1 {
 }
 
 .gruppe-member {
-    display: grid;
-    place-items: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 80px 20px;
-    margin: 10px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 80px 20px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  border-radius: 8px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .gruppe-bilde {
@@ -84,15 +93,15 @@ header h1 {
 }
 
 .gruppe-member:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 .font {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 a {
   color: black;
-  font-family: Georgia, 'Times New Roman', Times, serif
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 a:link {
   text-decoration: none;
@@ -108,20 +117,19 @@ a:active {
   text-decoration: none;
 }
 #medlem {
-  background-color:#fff;
-  padding: 50px 0; 
+  background-color: #fff;
+  padding: 50px 0;
   text-align: center;
-  
 }
 .textVenstre {
-  position:sticky;
+  position: sticky;
   padding-left: 3vw;
 }
 .storText {
   font-size: 30px;
 }
-.sentrertText{
-text-align: center;
+.sentrertText {
+  text-align: center;
 }
 /*.bildeContainer {
 
@@ -137,20 +145,20 @@ text-align: center;
   overflow: hidden; 
 }
   */
-  .wrapper {
-    display: flex;   
-    justify-content: center;               /* Use grid layout */
-    align-items: center;            /* Center items both horizontally and vertically */
-    height: 100vh;                  /* Full height of the viewport */
+.wrapper {
+  display: flex;
+  justify-content: center; /* Use grid layout */
+  align-items: center; /* Center items both horizontally and vertically */
+  height: 100vh; /* Full height of the viewport */
 }
 
 .bildeContainer {
-    width: 300px;                   /* Set width of the container */
-    height: 400px;                  /* Set height of the container */
-    border: 1px solid #ccc;         
-    border-radius: 10px;            
-    overflow: hidden;   
-    position: relative;            
+  width: 300px; /* Set width of the container */
+  height: 400px; /* Set height of the container */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
 }
 .bilde {
   max-width: 100%;
@@ -158,12 +166,122 @@ text-align: center;
   object-fit: contain;
 }
 
-
-/*Magnus*/ 
-
-.magnus-bilde {
-
-  
+#medlem {
+  margin-top: 3vh;
 }
 
+/*Magnus*/
 
+#overMagnus {
+  font-size: 5vh;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 20px 0;
+  background: linear-gradient(90deg, #4caf50, #1b5e20);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+.flex-container p {
+  font-size: 2vh;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+  height: 40vh;
+  width: 40vw;
+  background: linear-gradient(90deg, #4caf50, #1b5e20);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box5 ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.box5 li {
+  width: 39vw;
+  font-size: 18px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px 0;
+  transition: background-color 0.3s;
+}
+
+.box5 li:hover {
+  background-color: var(--secondary-color);
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6 {
+    width: 90vw;
+  }
+
+  .box1 {
+    order: 1;
+  }
+
+  .box2 {
+    order: 2;
+  }
+
+  .box3 {
+    order: 4;
+  }
+
+  .box4 {
+    order: 3;
+  }
+
+  .box5 {
+    order: 5;
+  }
+
+  .box6 {
+    order: 6;
+  }
+}

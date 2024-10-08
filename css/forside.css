@@ -24,7 +24,8 @@ html {
   height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../bilder/framside.webp") no-repeat center center/cover;
   color: var(--text-color);
   text-align: center;
@@ -50,7 +51,9 @@ html {
   text-decoration: none;
   border-radius: 50px;
   font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 .btn:hover {
   background-color: #1b5e20;
@@ -76,7 +79,9 @@ h2 {
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   text-decoration: none;
 }
 .feature:hover {
@@ -134,12 +139,12 @@ button {
   font-size: 16px;
 }
 
-button:hover{
-  background-color:#e8f5e9; 
+button:hover {
+  background-color: #e8f5e9;
   color: #1b5e20;
 }
 
-#om{
-  color: #333!important;
+#om {
+  color: #333 !important;
   z-index: 10;
 }

@@ -12,9 +12,8 @@
 body {
   margin: 0;
   font-family: "Nunito", Arial, sans-serif;
-  padding-top: 54px; 
+  padding-top: 54px;
 }
-
 
 nav {
   background-color: var(--navbar-bg);
@@ -50,7 +49,9 @@ nav ul li a {
   text-align: center;
   padding: 1rem 1.5rem;
   text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -64,50 +65,49 @@ nav ul li a.active {
 }
 
 .logo {
-  height: 5vh; 
+  height: 5vh;
 }
-
 
 @media screen and (max-width: 600px) {
   nav ul {
-    flex-direction: column; 
-    display: none; 
+    flex-direction: column;
+    display: none;
   }
 
   nav ul.show {
-    display: flex; 
+    display: flex;
   }
 
   nav ul li {
-    text-align: center; 
-    width: 100%; 
+    text-align: center;
+    width: 100%;
   }
 
   nav ul li a {
-    padding: 1rem; 
+    padding: 1rem;
   }
 
   .hamburger {
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
     padding: 1rem;
   }
 
   .hamburger span {
     background-color: var(--navbar-text);
-    height: 3px; 
-    width: 25px; 
-    margin: 4px 0; 
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
     transition: 0.3s;
   }
 
   nav ul .logo-item {
-    order: -1; 
-    margin-bottom: 1rem; 
+    order: -1;
+    margin-bottom: 1rem;
   }
 
   .logo {
-    margin-left: 1rem; 
+    margin-left: 1rem;
   }
 }

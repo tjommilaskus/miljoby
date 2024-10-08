@@ -89,7 +89,9 @@ footer p {
   text-decoration: none;
   border-radius: 50px;
   font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .btn:hover {
