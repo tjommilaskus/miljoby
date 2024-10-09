@@ -96,13 +96,10 @@ header h1 {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
-.font {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
+
 a {
   color: black;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
+  }
 a:link {
   text-decoration: none;
 }
@@ -131,20 +128,7 @@ a:active {
 .sentrertText {
   text-align: center;
 }
-/*.bildeContainer {
 
-  position: absolute;             
-  top: 50%;                    
-  left: 50%;                     
-  transform: translate(-50%, -50%);
-  object-fit: cover; 
-  width: 300px; 
-  height: 400px; 
-  border: 1px solid #ccc; 
-  border-radius: 10px; 
-  overflow: hidden; 
-}
-  */
 .wrapper {
   display: flex;
   justify-content: center; /* Use grid layout */
