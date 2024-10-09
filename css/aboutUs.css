@@ -309,3 +309,60 @@ img {
   width: 200px
   
 }
+
+/* kode for Heider.html */
+
+.boks {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1000px; /* Juster denne verdien for å endre den maksimale bredden */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.boks-innhold {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.tekst {
+  flex: 1;
+}
+
+.bilde {
+  flex: 0 0 400px; 
+}
+
+.bilde img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.boks h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.boks p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+  .boks-innhold {
+      flex-direction: column;
+  }
+
+  .bilde {
+      order: -1; 
+      margin-bottom: 20px;
+  }
+}
