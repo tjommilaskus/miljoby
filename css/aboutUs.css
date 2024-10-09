@@ -285,3 +285,43 @@ img {
     order: 6;
   }
 }
+
+
+
+
+/* kode for sander.html */
+
+.bokss {
+  border: 2px solid #010b9d; 
+  padding: 20px;           
+  margin: 30px;            
+  border-radius: 8px;      
+  background-color: #91c4b3; 
+}
+
+.boksss {
+  border: 2px solid #010b9d; 
+  padding: 20px;           
+  margin: 30px;            
+  border-radius: 8px;      
+  background-color: #91c4b3; 
+  
+}
+
+.boksss h1, .bokss h2 {
+  margin-top: 0;  
+  text-align: center;
+}
+
+
+
+.bildeBokss img {
+ 
+  height: auto;      
+  border-radius: 20px; 
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px
+  
+}
