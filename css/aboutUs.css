@@ -46,6 +46,7 @@ header h1 {
   background-color: #fff;
   padding: 50px 0;
   text-align: center;
+  
 }
 
 #gruppe h2 {
@@ -57,7 +58,7 @@ header h1 {
 .gruppe-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 
 .gruppe-member {
@@ -74,6 +75,7 @@ header h1 {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+    
 }
 
 .gruppe-bilde {
@@ -95,6 +97,7 @@ header h1 {
 .gruppe-member:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  
 }
 
 a {
@@ -131,14 +134,14 @@ a:active {
 
 .wrapper {
   display: flex;
-  justify-content: center; /* Use grid layout */
-  align-items: center; /* Center items both horizontally and vertically */
-  height: 100vh; /* Full height of the viewport */
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
 }
 
 .bildeContainer {
-  width: 300px; /* Set width of the container */
-  height: 400px; /* Set height of the container */
+  width: 300px; 
+  height: 400px;
   border: 1px solid #ccc;
   border-radius: 10px;
   overflow: hidden;
