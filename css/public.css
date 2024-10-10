@@ -149,3 +149,117 @@ button:hover {
 }
 
 /* Slutt på index css */
+/* her putter jeg aboutUss css */
+.OmOss-body {
+  font-family: Arial, sans-serif;
+  margin-top: 16vh;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/*Overskrifter*/
+.OmOss-header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.omOss-header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.omOss-header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.omOss-header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.omOss-header h1 {
+  margin-top: 10px;
+  font-size: 2.5em;
+}
+
+#omOss-gruppe {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#omOss-gruppe h2 {
+  margin-bottom: 50px;
+  font-size: 2em;
+  color: #333;
+}
+
+.omOss-gruppe-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.omOss-gruppe-member {
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 80px 20px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  border-radius: 8px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.omOss-gruppe-bilde {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.omOss-gruppe-member h3 {
+  margin-bottom: 10px;
+}
+
+.omOss-gruppe-medlemer p {
+  color: #555;
+}
+
+.omOss-gruppe-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.omOss-a {
+  color: black;
+  }
+.omOss-a:link {
+  text-decoration: none;
+}
+.omOss-a:visited {
+  text-decoration: none;
+}
+.omOss-a:hover {
+  text-decoration: none;
+}
+
+.omOss-a:active {
+  text-decoration: none;
+}
+#omOss-medlem {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+/* her slutter om oss */
