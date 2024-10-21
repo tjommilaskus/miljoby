@@ -176,7 +176,7 @@ def plot_graph():
 
     # Plot Map of Bergen
     axBergen.axis('off')
-    img = mpimg.imread('map.jpg')
+    img = mpimg.imread('Bergen.jpg')
     axBergen.imshow(img)
     axBergen.set_title("Kart Bergen", color='white', fontsize=14)
     draw_circles_stations()
