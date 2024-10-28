@@ -8,7 +8,7 @@ from matplotlib.widgets import RectangleSelector
 import random
 from random import randint
 
-# Generate random data for a year
+# Generer tilfeldige data for et år
 def GenereateRandomYearDataList(intencity: float, seed: int = 0) -> list[int]:
     if seed != 0:
         random.seed(seed)
@@ -26,6 +26,8 @@ def GenereateRandomYearDataList(intencity: float, seed: int = 0) -> list[int]:
         nox = max(10, nox)
         noxList.append(nox)
     return noxList
+
+# Generer tilfeldig asfaltstøv data for et år
 
 def generateRandomAsfaltstøvlist(intencity: float, seed: int = 0) -> list[int]:
     if seed != 0:
@@ -50,7 +52,7 @@ def generateRandomAsfaltstøvlist(intencity: float, seed: int = 0) -> list[int]:
 
     return asfList
 
-# Data for NOx and Asphalt Dust
+# Data for NOx og Asfaltstøv
 _kron_nox = GenereateRandomYearDataList(intencity=1.0, seed=2)
 _nord_nox = GenereateRandomYearDataList(intencity=.3, seed=1)
 _nygård_nox = GenereateRandomYearDataList(intencity=.5, seed=3)
@@ -59,7 +61,7 @@ _kron_asf = generateRandomAsfaltstøvlist(intencity=1.0, seed=2)
 _nord_asf = generateRandomAsfaltstøvlist(intencity=.3, seed=1)
 _nygård_asf = generateRandomAsfaltstøvlist(intencity=.5, seed=3)
 
-# Initialize the figure and axes
+# Initialiser figur og akser
 fig = plt.figure(figsize=(13, 5))
 axNok = fig.add_axes((0.05, 0.05, 0.45, 0.9))
 axInterval = fig.add_axes((0.4, 0.05, 0.1, 0.25))
@@ -70,9 +72,9 @@ coordinates_Kronstad = (1140, 1140)
 coordinates_Nygård = (800, 800)
 days_interval = (1, 365)
 marked_point = (0, 0)
-current_graph_type = 'NOx'  # Initialize this variable
+current_graph_type = 'NOx'  # Initialiser denne variabelen
 
-# Function to handle interval selection
+# Funksjon for å håndtere intervallvalg
 def on_day_interval(kvartal):
     global days_interval, marked_point
     if kvartal == '1. Kvartal':
@@ -88,20 +90,20 @@ def on_day_interval(kvartal):
     marked_point = (0, 0)
     plot_graph()
 
-# Function for click event on map
+# Funksjon for klikkehendelse på kartet
 def on_click(event):
     global marked_point
     if event.inaxes == axBergen:
         marked_point = (event.xdata, event.ydata)
         plot_graph()
 
+# Beregn punktverdi basert på avstander til stasjonene
 def CalcPointValue(valNy, valK, valN):
     # Calculate distances between points
     distNygård = math.dist(coordinates_Nygård, marked_point)
     distKronstad = math.dist(coordinates_Kronstad, marked_point)
     distNordnes = math.dist(coordinates_Nordnes, marked_point)
 
-    # Prevent division by zero if the point is exactly on one of the stations
     if distNygård == 0:
         return valNy
     if distKronstad == 0:
@@ -109,18 +111,20 @@ def CalcPointValue(valNy, valK, valN):
     if distNordnes == 0:
         return valN
 
-    # Calculate inverse distances
+
     inv_distNy = 1 / distNygård
     inv_distK = 1 / distKronstad
     inv_distN = 1 / distNordnes
 
-    # Sum of inverse distances
+    
     total_inv_dist = inv_distNy + inv_distK + inv_distN
 
-    # Calculate weighted average based on inverse distances
+  
     weighted_val = (inv_distNy * valNy + inv_distK * valK + inv_distN * valN) / total_inv_dist
     
     return weighted_val
+
+# Tegn sirkler rundt stasjonene
 
 def draw_circles_stations():
     circle = mpatches.Circle((coordinates_Nordnes), 50, color='blue')
@@ -130,6 +134,7 @@ def draw_circles_stations():
     circle = mpatches.Circle((coordinates_Nygård), 50, color='green')
     axBergen.add_patch(circle)
 
+# Tegn etiketter og ticks
 def draw_label_and_ticks():
     num_labels = 12
     xlabels = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D']
@@ -153,6 +158,7 @@ def draw_label_and_ticks():
     axNok.xaxis.label.set_color('white')
     axNok.yaxis.label.set_color('white')
 
+# Plot grafen
 def plot_graph():
     axNok.cla()
     axBergen.cla()
@@ -180,13 +186,13 @@ def plot_graph():
         circle = mpatches.Circle((marked_point[0], marked_point[1]), 50, color='orange')
         axBergen.add_patch(circle)
 
-    # Plot each dataset with a specific color
+    
     lineN, = axNok.plot(list_days, asfN, color='blue', linewidth=2, alpha=0.9, label='Nordnes')
     lineK, = axNok.plot(list_days, asfK, color='red', linewidth=2, alpha=0.9, label='Kronstad')
     lineNy, = axNok.plot(list_days, asfNy, color='green', linewidth=2, alpha=0.9, label='Nygård')
     lineS, = axNok.plot(list_days, asfS, color='cyan', linewidth=2, alpha=0.9, label='Gjennomsnitt')
 
-    # Fill areas under the lines
+    
     axNok.fill_between(list_days, asfN, color='blue', alpha=0.2)
     axNok.fill_between(list_days, asfK, color='red', alpha=0.2)
     axNok.fill_between(list_days, asfNy, color='green', alpha=0.2)
@@ -199,7 +205,7 @@ def plot_graph():
     axNok.set_title(data_label, color='0.9')
     axInterval.set_title("Intervall", color='0.9')
 
-    # Ensure legend shows all lines, even if 'Markert' isn't clicked
+    
     axNok.legend(handles=[lineN, lineK, lineNy, lineS], loc="upper right")
     
     axNok.grid(linestyle='-', color='#2A3459', linewidth=0.6)
@@ -215,12 +221,13 @@ def plot_graph():
 
 plot_graph()
 
+# Endre graf type basert på valg
 def on_graph_type_change(label):
     global current_graph_type
     current_graph_type = label
     plot_graph()
 
-# RectangleSelector behavior
+# Oppførsel for RectangleSelector
 def onselect(eclick, erelease):
     x1, y1 = eclick.xdata, eclick.ydata
     x2, y2 = erelease.xdata, erelease.ydata
