@@ -22,11 +22,11 @@ html {
   padding: 0 20px;
 }
 
-.container {
+main {
   padding-top: 80px; /* Gir plass til navbar */
 }
 
-#EsktraInf{
+h1 {
   text-align: center;
   font-size: 3rem;
   color: var(--primary-color);
@@ -34,39 +34,68 @@ html {
   padding-top: 60px; /* Legger til padding på toppen for å unngå at teksten havner bak navbar */
 }
 
-.lesMer section {
+section {
   margin-bottom: 4rem;
 }
 
-.lesMer h2 {
+h2 {
   color: var(--primary-color);
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
-.lesMer p {
+p {
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
 }
 
+footer {
+  background-color: var(--text-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 0;
+}
 
+footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
 
 /* Responsivt design */
 @media (max-width: 768px) {
- .ekstraInf h1 {
+  h1 {
     font-size: 2.5rem;
   }
 
-  .lesMer h2 {
+  h2 {
     font-size: 2rem;
   }
 
-  .lesMer p {
+  p {
     font-size: 1rem;
   }
 }
 
+/* Tillegg for å matche forsiden bedre */
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
+.btn:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-3px);
+}
 
 /* Legg til en bakgrunnsfarge for annenhver seksjon for bedre lesbarhet */
 section:nth-child(even) {
