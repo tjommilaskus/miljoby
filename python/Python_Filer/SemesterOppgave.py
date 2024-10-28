@@ -214,7 +214,8 @@ def plot_graph():
     axBergen.axis('off')
     img = mpimg.imread('python/Python_Filer/map.jpg')
     axBergen.imshow(img)
-    axBergen.set_title("Kart Bergen")
+    setfo = 'lightgrey'
+    axBergen.set_title("Kart Bergen", color='lightgrey')
     draw_circles_stations()
     plt.draw()
 
@@ -279,7 +280,9 @@ rect_selector = RectangleSelector(axBergen, onselect, interactive=True, button=[
 
 # Radio button for graph type selection
 axGraphType = fig.add_axes((0.8, 0.7, 0.15, 0.2))
-radio_button_graph = RadioButtons(axGraphType, ('NOx', 'Asfaltstøv'))
+set_color = 'lighgrey'
+radio_button_graph = RadioButtons(axGraphType, ('NOx', 'Asfaltstøv'),
+                                   activecolor='green')
 radio_button_graph.on_clicked(on_graph_type_change)
 
 # Connect toggle selector, click, and zoom events
