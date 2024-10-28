@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <li class="link-item"><a href="omProsjektet.html">Om Prosjektet</a></li>
           <li class="link-item"><a href="berekraft.html">Bærekraft</a></li>
           <li class="link-item"><a href="lesMer.html">Les Mer</a></li>
+          <li class="link-item"><a href="maalinger.html">Målinger</a></li>
           <li class="link-item"><a href="omOss.html">Om Oss</a></li>
         </ul>
         <div class="hamburger">
@@ -25,15 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
-  
-  const hamburger = document.querySelector('.hamburger');
-  const navMenu = document.querySelector('nav ul');
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector("nav ul");
 
-  hamburger.addEventListener('mouseover', () => {
-    navMenu.classList.toggle('show'); 
+  hamburger.addEventListener("mouseover", () => {
+    navMenu.classList.toggle("show");
   });
 
-  
   const currentPage = window.location.pathname.split("/").pop();
   const navLinks = document.querySelectorAll("nav ul li a");
 
