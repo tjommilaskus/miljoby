@@ -6,7 +6,7 @@
 }
 
 /*Genereltr*/
-body {
+.OmOss-body {
   font-family: Arial, sans-serif;
   margin-top: 16vh;
   padding: 0;
@@ -15,52 +15,53 @@ body {
 }
 
 /*Overskrifter*/
-header {
+.OmOss-header {
   background-color: #333;
   color: #fff;
   padding: 20px 0;
   text-align: center;
 }
 
-header nav ul {
+.omOss-header nav ul {
   list-style: none;
   padding: 0;
 }
 
-header nav ul li {
+.omOss-header nav ul li {
   display: inline;
   margin-right: 20px;
 }
 
-header nav ul li a {
+.omOss-header nav ul li a {
   color: #fff;
   text-decoration: none;
 }
 
-header h1 {
+.omOss-header h1 {
   margin-top: 10px;
   font-size: 2.5em;
 }
 
-#gruppe {
+#omOss-gruppe {
   background-color: #fff;
   padding: 50px 0;
   text-align: center;
+  
 }
 
-#gruppe h2 {
+#omOss-gruppe h2 {
   margin-bottom: 50px;
   font-size: 2em;
   color: #333;
 }
 
-.gruppe-container {
+.omOss-gruppe-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 
-.gruppe-member {
+.omOss-gruppe-member {
   display: grid;
   place-items: center;
   background-color: #fff;
@@ -74,9 +75,10 @@ header h1 {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+    
 }
 
-.gruppe-bilde {
+.omOss-gruppe-bilde {
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -84,36 +86,37 @@ header h1 {
   margin-bottom: 15px;
 }
 
-.gruppe-member h3 {
+.omOss-gruppe-member h3 {
   margin-bottom: 10px;
 }
 
-.gruppe-medlemer p {
+.omOss-gruppe-medlemer p {
   color: #555;
 }
 
-.gruppe-member:hover {
+.omOss-gruppe-member:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  
 }
 
-a {
+.omOss-a {
   color: black;
   }
-a:link {
+.omOss-a:link {
   text-decoration: none;
 }
-a:visited {
+.omOss-a:visited {
   text-decoration: none;
 }
-a:hover {
+.omOss-a:hover {
   text-decoration: none;
 }
 
-a:active {
+.omOss-a:active {
   text-decoration: none;
 }
-#medlem {
+#omOss-medlem {
   background-color: #fff;
   padding: 50px 0;
   text-align: center;
@@ -131,14 +134,14 @@ a:active {
 
 .wrapper {
   display: flex;
-  justify-content: center; /* Use grid layout */
-  align-items: center; /* Center items both horizontally and vertically */
-  height: 100vh; /* Full height of the viewport */
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
 }
 
 .bildeContainer {
-  width: 300px; /* Set width of the container */
-  height: 400px; /* Set height of the container */
+  width: 300px; 
+  height: 400px;
   border: 1px solid #ccc;
   border-radius: 10px;
   overflow: hidden;
@@ -191,7 +194,7 @@ a:active {
 .box6 {
   height: 40vh;
   width: 40vw;
-  background: linear-gradient(90deg, #4caf50, #1b5e20);
+  background-color: #e8f5e9;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
